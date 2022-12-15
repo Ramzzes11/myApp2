@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyApp13</string>
+    <string name="Setting">Settings</string>
+    <string name="home_addres">Home address</string>
+    <string name="career">Career</string>
+    <string name="name_surname">Name Surname</string>
+    <string name="view_my_contacts">view my contacts</string>
+    <string name="go_to_settings_and_fill_out_the_profile">Go to settings and fill out the profile</string>
+</resources>

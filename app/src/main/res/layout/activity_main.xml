@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textViwUndButtom"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="260dp"
+        tools:srcCompat="@drawable/faceb" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="376dp"
+        android:background="#242235"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="@string/Setting"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/person2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp"
+        android:accessibilityLiveRegion="none"
+        android:alpha="0.7"
+        android:fadingEdge="none"
+        android:scaleType="centerInside"
+        app:guidelineUseRtl="false"
+        app:layout_constraintBottom_toTopOf="@+id/name_surname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:srcCompat="@drawable/person_icon15"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/name_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="@string/name_surname"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/caree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/caree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="@string/career"
+        android:textColor="@color/gray_text2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/go_to_setti"
+        app:layout_constraintEnd_toEndOf="@+id/name_surname"
+        app:layout_constraintStart_toStartOf="@+id/name_surname"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/go_to_setti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_semibold"
+        android:gravity="top"
+        android:text="@string/home_addres"
+        android:textColor="@color/gray_text2"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/caree"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/caree"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <ImageButton
+        android:id="@+id/imButViewMyContact"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/butt11"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imButEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/imButViewMyContact"
+        app:layout_constraintEnd_toEndOf="@+id/imButViewMyContact"
+        app:layout_constraintStart_toStartOf="@+id/imButViewMyContact"
+        app:srcCompat="@drawable/butt22" />
+
+    <TextView
+        android:id="@+id/textViwUndButtom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="@string/go_to_settings_and_fill_out_the_profile"
+        android:textColor="#0B0000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imButEditProfile"
+        app:layout_constraintEnd_toEndOf="@+id/imButEditProfile"
+        app:layout_constraintStart_toStartOf="@+id/imButEditProfile"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imButtfb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+
+        android:foregroundTint="@color/white"
+        android:layerType="software"
+        app:layout_constraintBottom_toTopOf="@+id/textViwUndButtom"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="80dp"
+        tools:srcCompat="@drawable/faceb" />
+
+    <ImageButton
+        android:id="@+id/imButF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imButtfb"
+        app:layout_constraintEnd_toEndOf="@+id/imButtfb"
+        app:layout_constraintStart_toStartOf="@+id/imButtfb"
+        app:layout_constraintTop_toTopOf="@+id/imButtfb"
+        app:srcCompat="@drawable/f" />
+
+    <ImageButton
+        android:id="@+id/imButIncirc"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+
+        app:layout_constraintBottom_toTopOf="@+id/textViwUndButtom"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="170dp"
+        tools:srcCompat="@drawable/faceb" />
+
+    <ImageButton
+        android:id="@+id/imButtin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imButIncirc"
+        app:layout_constraintEnd_toEndOf="@+id/imButIncirc"
+        app:layout_constraintStart_toStartOf="@+id/imButIncirc"
+        app:layout_constraintTop_toTopOf="@+id/imButIncirc"
+        app:srcCompat="@drawable/in" />
+
+    <ImageButton
+        android:id="@+id/imButtInstCir"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toStartOf="@+id/imageButton8"
+        app:layout_constraintTop_toTopOf="@+id/imageButton8"
+        app:srcCompat="@drawable/inst" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
